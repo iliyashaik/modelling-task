@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="account col-sm-6 offset-sm-3">
+        <ng-template #content let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title">Chat Window</h4>
+            <button type="button" class="close" aria-label="Close" (click)="closeChat(modal)">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Your chat content goes here -->
+            <button class="btn btn-primary" (click)="closeChat(modal)">Close Chat</button>
+          </div>
+        </ng-template>
+
+        <button class="btn btn-primary" (click)="openChat()">Open Chat</button>
+        </div>
+      </div>
+    </div>
+  </div>
